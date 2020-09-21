@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="globParent" alignment="center" prefHeight="88.0" prefWidth="234.0" style="-fx-background-image: url(wall.png);"
+      xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+
+    <MenuBar prefHeight="44.0" prefWidth="234.0">
+        <Menu text="Введите название папки на сервере:" />
+    </MenuBar>
+
+    <TextField fx:id="login" maxWidth="200" prefHeight="36.0" prefWidth="200.0" promptText="Login">
+        <VBox.margin>
+            <Insets left="3.0" right="3.0" top="7.0" />
+        </VBox.margin></TextField>
+    <Label fx:id="errorLabel" prefHeight="0.0" prefWidth="188.0" visible="false" />
+
+    <Button cache="true" depthTest="ENABLE" graphicTextGap="0.0" mnemonicParsing="false" onAction="#auth" prefHeight="21.0" prefWidth="203.0" text="Ok">
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <VBox.margin>
+            <Insets bottom="8.0" left="2.0" right="2.0" />
+        </VBox.margin></Button>
+
+</VBox>

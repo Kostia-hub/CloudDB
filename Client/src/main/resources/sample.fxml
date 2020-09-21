@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      fx:controller="Controller">
+    <MenuBar>
+        <Menu text="Файл">
+            <MenuItem text="Выйти из программы" onAction="#btnExitAction"/>
+        </Menu>
+    </MenuBar>
+
+    <HBox VBox.vgrow="ALWAYS">
+        <fx:include fx:id="leftPanel" source="leftPanel.fxml"  />
+        <fx:include fx:id="rightPanel" source="rightPanel.fxml" HBox.hgrow="ALWAYS" />
+
+    </HBox>
+
+</VBox>
